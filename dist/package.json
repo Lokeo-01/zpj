@@ -1,0 +1,11 @@
+{
+  "name": "personal-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node build.cjs",
+    "dev": "node server.cjs",
+    "preview": "node server.cjs"
+  }
+}
