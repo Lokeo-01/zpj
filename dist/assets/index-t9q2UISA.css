@@ -2882,6 +2882,340 @@ body:has(.product-portfolio-theme #works),
 @media (min-width:641px) and (max-width:980px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media (max-width:640px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:1fr!important}}
 
+/* Final mobile viewport sizing: compact phone-friendly grids, not desktop-scale widths. */
+@media (max-width: 780px) {
+  .product-portfolio-theme #works { overflow-x: hidden !important; }
+  .product-portfolio-theme #works > div { min-width: 0 !important; }
+  .product-portfolio-theme #works .pdf-main-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 28px) !important;
+    gap: 10px !important;
+  }
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) {
+    grid-column: span 1 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+    grid-column: span 3 !important;
+    aspect-ratio: 1464 / 600 !important;
+  }
+  .product-portfolio-theme #works .works-compact-gallery,
+  .product-portfolio-theme #works .detail-page-showcase,
+  .product-portfolio-theme #works .detail-page-connect-showcase,
+  .product-portfolio-theme #works .works-masonry-gallery--3d {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 28px) !important;
+    gap: 10px !important;
+  }
+  .product-portfolio-theme #works .detail-page-section,
+  .product-portfolio-theme #works .detail-packaging-row {
+    width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 28px) !important;
+  }
+}
+
+/* Final mobile hero reel: compact right-side strip that stays clear of the hero copy. */
+@media (max-width: 760px) {
+  .product-portfolio-theme .hero-image-reel {
+    left: auto !important;
+    right: clamp(0.45rem, 3.2vw, 0.9rem) !important;
+    top: 16.7rem !important;
+    bottom: auto !important;
+    width: min(42vw, 11.5rem) !important;
+    height: min(28svh, 14.75rem) !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.3rem !important;
+    padding: 0.32rem !important;
+    opacity: 0.42 !important;
+    transform: none !important;
+    pointer-events: none !important;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 13%, #000 76%, transparent 100%) !important;
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 13%, #000 76%, transparent 100%) !important;
+  }
+
+  .product-portfolio-theme .hero-image-reel__column:nth-child(3) {
+    display: none !important;
+  }
+
+  .product-portfolio-theme .hero-image-reel__column {
+    --reel-gap: 0.3rem !important;
+  }
+
+  .product-portfolio-theme .hero-image-reel__tile {
+    border-width: 3px !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 10px 20px rgba(22, 24, 27, 0.12) !important;
+  }
+}
+
+/* Final mobile fit: smaller image groups so the full layout is visible in the phone viewport. */
+@media (max-width: 780px) {
+  .product-portfolio-theme #works .pdf-main-grid,
+  .product-portfolio-theme #works .works-compact-gallery,
+  .product-portfolio-theme #works .detail-page-showcase,
+  .product-portfolio-theme #works .detail-page-connect-showcase,
+  .product-portfolio-theme #works .works-masonry-gallery--3d,
+  .product-portfolio-theme #works .detail-page-section,
+  .product-portfolio-theme #works .detail-packaging-row {
+    width: calc(100vw - 64px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 64px) !important;
+    gap: 8px !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .product-portfolio-theme #works .works-compact-gallery,
+  .product-portfolio-theme #works .detail-page-showcase,
+  .product-portfolio-theme #works .detail-page-connect-showcase,
+  .product-portfolio-theme #works .works-masonry-gallery--3d {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Final mobile viewport sizing: preserve compact multi-column image browsing. */
+@media (max-width: 780px) {
+  .product-portfolio-theme #works { overflow-x: hidden !important; }
+  .product-portfolio-theme #works > div { min-width: 0 !important; }
+  .product-portfolio-theme #works .pdf-main-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 28px) !important;
+    gap: 10px !important;
+  }
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) {
+    grid-column: span 1 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+    grid-column: span 3 !important;
+    aspect-ratio: 1464 / 600 !important;
+  }
+  .product-portfolio-theme #works .works-compact-gallery,
+  .product-portfolio-theme #works .detail-page-showcase,
+  .product-portfolio-theme #works .detail-page-connect-showcase,
+  .product-portfolio-theme #works .works-masonry-gallery--3d {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 28px) !important;
+    gap: 10px !important;
+  }
+  .product-portfolio-theme #works .detail-page-section,
+  .product-portfolio-theme #works .detail-packaging-row {
+    width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 28px) !important;
+  }
+}
+
+/* Mobile image layout parity: keep portfolio image sections in the desktop composition. */
+@media (max-width: 780px) {
+  .product-portfolio-theme #works {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .product-portfolio-theme #works > div {
+    min-width: 1080px !important;
+  }
+
+  .product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2,
+  .product-portfolio-theme #works .pdf-main-grid {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    grid-auto-flow: row dense !important;
+    gap: 18px !important;
+    max-width: 1080px !important;
+    min-width: 1080px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid > .image-card,
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) {
+    grid-column: span 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+    grid-column: span 3 !important;
+    aspect-ratio: 1464 / 600 !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8) img,
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9) img,
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10) img,
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11) img,
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) img {
+    object-fit: contain !important;
+  }
+
+  .product-portfolio-theme #works .works-compact-gallery {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    max-width: 1080px !important;
+    min-width: 1080px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .product-portfolio-theme #works .works-compact-gallery__column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+
+  .product-portfolio-theme #works .detail-packaging-row {
+    grid-template-columns: minmax(190px, 1fr) minmax(0, 4fr) !important;
+    max-width: 1080px !important;
+    min-width: 1080px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .product-portfolio-theme #works .detail-packaging-row > .image-card {
+    display: block !important;
+  }
+
+  .product-portfolio-theme #works .packaging-gallery {
+    grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, 190px) !important;
+    grid-auto-rows: 190px !important;
+  }
+
+  .product-portfolio-theme #works .detail-page-section {
+    max-width: 1080px !important;
+    min-width: 1080px !important;
+  }
+
+  .product-portfolio-theme #works .detail-page-showcase {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .product-portfolio-theme #works .detail-page-connect-showcase {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    max-width: 1080px !important;
+    min-width: 1080px !important;
+  }
+
+  .product-portfolio-theme #works .works-masonry-gallery--3d {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    max-width: 1080px !important;
+    min-width: 1080px !important;
+  }
+}
+
+/* Mobile image layout refinement: keep the desktop-style grouping, scaled to the phone viewport. */
+@media (max-width: 780px) {
+  .product-portfolio-theme #works {
+    overflow-x: hidden !important;
+  }
+
+  .product-portfolio-theme #works > div {
+    min-width: 0 !important;
+  }
+
+  .product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2,
+  .product-portfolio-theme #works .pdf-main-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    max-width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    width: calc(100vw - 28px) !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid > .image-card,
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) {
+    grid-column: span 1 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+    grid-column: span 3 !important;
+    aspect-ratio: 1464 / 600 !important;
+  }
+
+  .product-portfolio-theme #works .works-compact-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    max-width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    width: calc(100vw - 28px) !important;
+  }
+
+  .product-portfolio-theme #works .works-compact-gallery__column {
+    gap: 10px !important;
+  }
+
+  .product-portfolio-theme #works .detail-packaging-row {
+    grid-template-columns: minmax(0, 1fr) !important;
+    max-width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    width: calc(100vw - 28px) !important;
+  }
+
+  .product-portfolio-theme #works .detail-packaging-row > .image-card {
+    display: none !important;
+  }
+
+  .product-portfolio-theme #works .packaging-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: none !important;
+    grid-auto-rows: auto !important;
+  }
+
+  .product-portfolio-theme #works .detail-page-section {
+    max-width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    width: calc(100vw - 28px) !important;
+  }
+
+  .product-portfolio-theme #works .detail-page-showcase,
+  .product-portfolio-theme #works .detail-page-connect-showcase,
+  .product-portfolio-theme #works .works-masonry-gallery--3d {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    max-width: calc(100vw - 28px) !important;
+    min-width: 0 !important;
+    width: calc(100vw - 28px) !important;
+    gap: 10px !important;
+  }
+}
+
 /* Detail page connection images: requested as one row of five. */
 .product-portfolio-theme #works .detail-page-connect-showcase{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:18px!important;max-width:min(1080px,calc(100vw - 48px))!important;margin:18px auto 0!important;padding:0 2px 2px!important;background:#fff!important;align-items:start!important}
 .product-portfolio-theme #works .detail-page-connect-showcase:before,.product-portfolio-theme #works .detail-page-connect-showcase:after{display:none!important;content:none!important}
@@ -2893,6 +3227,7 @@ body:has(.product-portfolio-theme #works),
 /* Final title visibility fix for the current 3D rendering section. */
 .product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2{color:#050505!important;display:inline-flex!important;width:auto!important;min-width:max-content!important;max-width:none!important;overflow:visible!important;font-size:clamp(1.95rem,3.6vw,3.6rem)!important;line-height:.9!important;white-space:nowrap!important}
 .product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2 *,.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2 span{color:#050505!important;font-size:inherit!important;line-height:inherit!important}
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) p{display:none!important}
 
 /* Final 3D card whitespace fix: keep cards at their image height instead of grid row stretching. */
 .product-portfolio-theme #works .works-masonry-gallery--3d{align-items:start!important}
@@ -2915,3 +3250,48 @@ body:has(.product-portfolio-theme #works),
 .product-portfolio-theme #works .works-masonry-gallery--3d .image-card,.product-portfolio-theme #works .works-masonry-gallery--3d .image-card:nth-child(n){margin:0!important}
 @media (min-width:641px) and (max-width:980px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media (max-width:640px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:1fr!important}}
+
+/* Final mobile viewport sizing: compact phone-friendly grids, not desktop-scale widths. */
+@media (max-width: 780px) {
+  .product-portfolio-theme #works { overflow-x: hidden !important; }
+  .product-portfolio-theme #works > div { min-width: 0 !important; }
+  .product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2,
+  .product-portfolio-theme #works .pdf-main-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: calc(100vw - 64px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 64px) !important;
+    gap: 8px !important;
+  }
+  .product-portfolio-theme #works .pdf-main-grid > .image-card,
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) {
+    grid-column: span 1 !important;
+    aspect-ratio: 1 / 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+    grid-column: span 3 !important;
+    aspect-ratio: 1464 / 600 !important;
+  }
+  .product-portfolio-theme #works .works-compact-gallery,
+  .product-portfolio-theme #works .detail-page-showcase,
+  .product-portfolio-theme #works .detail-page-connect-showcase,
+  .product-portfolio-theme #works .works-masonry-gallery--3d {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: calc(100vw - 64px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 64px) !important;
+    gap: 8px !important;
+  }
+  .product-portfolio-theme #works .detail-page-section,
+  .product-portfolio-theme #works .detail-packaging-row {
+    width: calc(100vw - 64px) !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 64px) !important;
+  }
+}
