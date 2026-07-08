@@ -3,3 +3,2915 @@
 [data-opening-curtain]{display:none!important}
 .profile-code-card .profile-portrait-image{left:50%!important;right:auto!important;top:auto!important;bottom:-2%!important;inset:auto auto -2% 50%!important;width:auto!important;height:104%!important;max-width:108%!important;object-fit:contain!important;object-position:center bottom!important;pointer-events:none!important;transform:translate3d(-50%,0,0)!important}
 @media(max-width:760px){.profile-code-card .profile-portrait-image{left:50%!important;right:auto!important;top:auto!important;bottom:0!important;inset:auto auto 0 50%!important;width:auto!important;height:100%!important;max-width:100%!important;object-fit:contain!important;object-position:center bottom!important;transform:translate3d(-50%,0,0)!important}}
+
+/* restored product portfolio theme */
+.pdf-portfolio-theme {
+  --color-bg: #ffffff;
+  --color-text: #080808;
+  --color-muted: #5d5d5d;
+  --color-border: rgba(8, 8, 8, 0.16);
+  --color-border-soft: rgba(8, 8, 8, 0.08);
+  --color-accent: #1028ff;
+  --color-accent-soft: rgba(16, 40, 255, 0.12);
+  --color-accent-secondary: #4a96df;
+  background: #fff;
+  color: #080808;
+}
+
+.pdf-portfolio-theme .section-dark::before,
+.pdf-portfolio-theme .section-light::before,
+.pdf-portfolio-theme .hero-reference-bg::before,
+.pdf-portfolio-theme .contact-poster::before {
+  background: #fff;
+}
+
+.pdf-portfolio-theme [class*='text-white'] {
+  color: rgba(8, 8, 8, 0.9) !important;
+}
+
+.pdf-portfolio-theme [class*='border-white'] {
+  border-color: rgba(8, 8, 8, 0.14) !important;
+}
+
+.pdf-portfolio-theme [class*='bg-white'] {
+  background-color: rgba(8, 8, 8, 0.035) !important;
+}
+
+.pdf-portfolio-theme [class*='text-[#9cff57]'],
+.pdf-portfolio-theme [class*='text-\\[\\#9cff57\\]'] {
+  color: #1028ff !important;
+}
+
+.pdf-portfolio-theme [class*='border-[#9cff57]'],
+.pdf-portfolio-theme [class*='border-\\[\\#9cff57\\]'] {
+  border-color: rgba(16, 40, 255, 0.28) !important;
+}
+
+.pdf-portfolio-theme [class*='bg-[#9cff57]'],
+.pdf-portfolio-theme [class*='bg-\\[\\#9cff57\\]'] {
+  background-color: #1028ff !important;
+}
+
+.pdf-portfolio-theme nav > div {
+  border-color: rgba(8, 8, 8, 0.16) !important;
+  background: rgba(255, 255, 255, 0.86) !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.08) !important;
+  color: #080808;
+}
+
+.pdf-portfolio-theme nav button {
+  color: rgba(8, 8, 8, 0.72);
+}
+
+.pdf-portfolio-theme nav button:hover {
+  color: #1028ff !important;
+}
+
+.pdf-portfolio-theme .hero-reference-layout::before,
+.pdf-portfolio-theme .hero-reference-layout::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border: 4px dashed #1028ff;
+  border-radius: 50%;
+  opacity: 0.95;
+}
+
+.pdf-portfolio-theme .hero-reference-layout::before {
+  left: -8vw;
+  top: 16vh;
+  width: min(56vw, 760px);
+  height: min(22vw, 290px);
+  transform: rotate(-19deg);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.pdf-portfolio-theme .hero-reference-layout::after {
+  left: 7.8vw;
+  bottom: 13.2vh;
+  width: min(47vw, 650px);
+  height: min(14vw, 190px);
+  transform: rotate(-8deg);
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.pdf-portfolio-theme #home::after {
+  content: '';
+  position: absolute;
+  left: clamp(38.2rem, 51.2vw, 43.6rem);
+  top: clamp(35.35rem, 77.8vh, 38.4rem);
+  z-index: 12;
+  width: 3.15rem;
+  height: 1.65rem;
+  pointer-events: none;
+  background: #2d18ff;
+  clip-path: polygon(0 0, 100% 50%, 0 100%, 18% 54%);
+  filter: drop-shadow(0 3px 0 rgba(16, 40, 255, 0.12));
+  transform: rotate(-7deg);
+}
+
+.pdf-portfolio-theme .portfolio-hero-title,
+.pdf-portfolio-theme [data-section-title] h2,
+.pdf-portfolio-theme [data-section-title] h3,
+.pdf-portfolio-theme .contact-poster__title {
+  color: #050505 !important;
+  letter-spacing: 0;
+  text-shadow:
+    4px 4px 0 #fff,
+    7px 7px 0 rgba(0, 0, 0, 0.18);
+  transform: skewX(-5deg);
+}
+
+.pdf-portfolio-theme .hero-reference-subtitle,
+.pdf-portfolio-theme .hero-reference-meta {
+  text-shadow: none;
+}
+
+.pdf-portfolio-theme #home [data-hero-detail].absolute,
+.pdf-portfolio-theme .hero-reference-meta > div:last-child {
+  display: none;
+}
+
+.pdf-portfolio-theme .hero-reference-meta {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.pdf-portfolio-theme .hero-image-reel {
+  right: -5.9rem;
+  top: 0.45rem;
+  bottom: -1.05rem;
+  width: min(42vw, 600px);
+  gap: clamp(0.55rem, 0.85vw, 0.9rem);
+  padding: 0.5rem;
+  opacity: 1;
+  transform: rotate(6deg);
+  transform-origin: 55% 50%;
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 11%, #000 67%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 9%, #000 91%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 11%, #000 67%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 9%, #000 91%, transparent 100%);
+  mask-composite: intersect;
+}
+
+.pdf-portfolio-theme .hero-image-reel::before,
+.pdf-portfolio-theme .hero-image-reel::after {
+  display: none;
+}
+
+.pdf-portfolio-theme .hero-image-reel__tile {
+  border-radius: clamp(1.05rem, 1.8vw, 1.7rem);
+  border: 7px solid #fff;
+  background: #f4f1ec;
+  box-shadow: 0 16px 26px rgba(0, 0, 0, 0.14);
+}
+
+.pdf-portfolio-theme .hero-image-reel__tile:hover {
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-portfolio-theme .hero-scroll-arrow {
+  color: #1028ff;
+}
+
+.pdf-portfolio-theme .pc-card-wrapper::after {
+  border-color: rgba(16, 40, 255, 0.45);
+  box-shadow: 0 0 0 2px rgba(16, 40, 255, 0.12);
+}
+
+.pdf-portfolio-theme .profile-code-card {
+  background: #4b99df;
+}
+
+.pdf-portfolio-theme .profile-code-card > .absolute {
+  background: #4b99df !important;
+}
+
+.pdf-portfolio-theme .pdf-works-page {
+  background: #fff;
+}
+
+.pdf-portfolio-theme .pdf-works-page::before {
+  background:
+    radial-gradient(circle at 9% 11%, rgba(16, 40, 255, 0.08), transparent 14rem),
+    linear-gradient(#fff, #fff);
+}
+
+.pdf-portfolio-theme .pdf-works-page > div {
+  color: #080808 !important;
+}
+
+.pdf-portfolio-theme .pdf-works-page [data-section-title] {
+  border-color: rgba(8, 8, 8, 0.18) !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.pdf-portfolio-theme .pdf-works-page [data-section-title]::before {
+  content: '';
+  display: inline-block;
+  width: 0.48rem;
+  height: 0.48rem;
+  margin-right: 0.55rem;
+  border-radius: 999px;
+  background: #1028ff;
+  vertical-align: 0.35em;
+}
+
+.pdf-portfolio-theme .pdf-main-grid {
+  max-width: min(1120px, 100%);
+  margin-inline: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: clamp(0.8rem, 1.6vw, 1.3rem) !important;
+}
+
+.pdf-portfolio-theme .pdf-main-grid .image-card,
+.pdf-portfolio-theme .pdf-poster-gallery .image-card,
+.pdf-portfolio-theme .pdf-render-gallery .image-card,
+.pdf-portfolio-theme .packaging-gallery__card {
+  border-radius: clamp(1rem, 1.8vw, 1.45rem) !important;
+  background: #f6f3ee !important;
+  box-shadow: none !important;
+  outline: 1px solid rgba(8, 8, 8, 0.06);
+}
+
+.pdf-portfolio-theme .image-card figcaption,
+.pdf-portfolio-theme .packaging-gallery__card figcaption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.82), transparent);
+}
+
+.pdf-portfolio-theme .pdf-poster-gallery {
+  max-width: min(860px, 100%);
+  margin-inline: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: clamp(0.8rem, 1.6vw, 1.15rem) !important;
+}
+
+.pdf-portfolio-theme .pdf-poster-gallery .works-compact-gallery__column {
+  gap: clamp(0.8rem, 1.6vw, 1.15rem);
+}
+
+.pdf-portfolio-theme .pdf-packaging-strip {
+  background: #f6f2ec;
+}
+
+.pdf-portfolio-theme .pdf-render-gallery {
+  max-width: min(980px, 100%);
+  margin-inline: auto;
+  column-count: 2 !important;
+  column-gap: clamp(0.8rem, 1.6vw, 1.2rem) !important;
+}
+
+.pdf-portfolio-theme .pdf-render-gallery .image-card {
+  margin-bottom: clamp(0.8rem, 1.6vw, 1.2rem) !important;
+}
+
+.pdf-portfolio-theme .detail-packaging-row {
+  max-width: min(1120px, 100%);
+  margin-inline: auto;
+}
+
+.pdf-portfolio-theme .work-preview-modal__panel {
+  background: #fff;
+  border-color: rgba(8, 8, 8, 0.12);
+}
+
+.pdf-portfolio-theme .work-preview-modal__detail,
+.pdf-portfolio-theme .work-preview-modal__tag {
+  background: #f5f2ec;
+  border-color: rgba(8, 8, 8, 0.1);
+  color: rgba(8, 8, 8, 0.76);
+}
+
+.pdf-portfolio-theme .work-preview-modal__detail h4 {
+  color: #080808;
+}
+
+@media (max-width: 860px) {
+  .pdf-portfolio-theme .hero-reference-layout::before,
+  .pdf-portfolio-theme .hero-reference-layout::after {
+    border-width: 3px;
+  }
+
+  .pdf-portfolio-theme .hero-image-reel {
+    right: 50%;
+    opacity: 0.52;
+    transform: translate(50%) rotate(4deg);
+  }
+}
+
+/* Final works-board polish: keep the whole works page dark and remove unstable legacy spans. */
+.product-portfolio-theme .pdf-works-page > div,
+.product-portfolio-theme #works > div,
+.product-portfolio-theme #works .w-full {
+  background: #050505 !important;
+  color: #fff !important;
+}
+
+.product-portfolio-theme #works [data-section-title] h2 {
+  color: #fff !important;
+}
+
+.product-portfolio-theme .pdf-main-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  grid-auto-flow: dense !important;
+  align-items: stretch !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card,
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(n),
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(6),
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(7) {
+  grid-column: span 1 / span 1 !important;
+  grid-row: auto !important;
+  aspect-ratio: 3 / 4 !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:first-child {
+  grid-column: span 2 / span 2 !important;
+  grid-row: span 2 / span 2 !important;
+  aspect-ratio: 1 / 1 !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(6),
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(7),
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(8) {
+  grid-column: span 2 / span 2 !important;
+  aspect-ratio: 16 / 9 !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card img {
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 0 !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(n) img,
+.product-portfolio-theme .pdf-main-grid .image-card:first-child img,
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(6) img,
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(7) img,
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(8) img {
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 0 !important;
+}
+
+.product-portfolio-theme .detail-head-gallery,
+.product-portfolio-theme .detail-packaging-row,
+.product-portfolio-theme .works-masonry-gallery--3d {
+  background: #050505 !important;
+}
+
+@media (max-width: 640px) {
+  .product-portfolio-theme .pdf-main-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .product-portfolio-theme .pdf-main-grid .image-card:first-child,
+  .product-portfolio-theme .pdf-main-grid .image-card:nth-child(6),
+  .product-portfolio-theme .pdf-main-grid .image-card:nth-child(7),
+  .product-portfolio-theme .pdf-main-grid .image-card:nth-child(8) {
+    grid-column: span 2 / span 2 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .pdf-portfolio-theme .pdf-main-grid,
+  .pdf-portfolio-theme .pdf-poster-gallery {
+    grid-template-columns: 1fr !important;
+  }
+
+  .pdf-portfolio-theme .pdf-render-gallery {
+    column-count: 1 !important;
+  }
+}
+
+/* Product portfolio reset: prioritize product main visuals, detail pages, and render sets. */
+.product-portfolio-theme .hero-reference-layout::before,
+.product-portfolio-theme .hero-reference-layout::after,
+.product-portfolio-theme #home::after {
+  display: none !important;
+}
+
+.product-portfolio-theme .hero-reference-bg {
+  min-height: 92svh;
+  background:
+    linear-gradient(90deg, #f6f6f2 0%, #ffffff 54%, #f2f4f5 100%) !important;
+}
+
+.product-portfolio-theme .hero-reference-bg::before {
+  background:
+    radial-gradient(circle at 78% 38%, rgba(42, 63, 79, 0.08), transparent 23rem),
+    linear-gradient(90deg, #f7f7f3 0%, #fff 58%, #f2f4f5 100%) !important;
+}
+
+.product-portfolio-theme .hero-reference-layout {
+  min-height: calc(92svh - 8rem) !important;
+}
+
+.product-portfolio-theme .portfolio-hero-title {
+  max-width: min(56rem, 58vw);
+  color: #121212 !important;
+  text-shadow:
+    3px 3px 0 #fff,
+    6px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.product-portfolio-theme .hero-reference-meta {
+  max-width: 34rem;
+  padding-bottom: clamp(3rem, 7vh, 5.5rem);
+}
+
+.product-portfolio-theme .hero-image-reel {
+  right: -4.2rem !important;
+  top: 3.25rem !important;
+  bottom: 2.75rem !important;
+  width: min(38vw, 520px) !important;
+  opacity: 0.92 !important;
+  transform: rotate(4deg) !important;
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 13%, #000 78%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 10%, #000 88%, transparent 100%) !important;
+  mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 13%, #000 78%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 10%, #000 88%, transparent 100%) !important;
+}
+
+.product-portfolio-theme .hero-image-reel__tile {
+  border-width: 6px !important;
+  border-color: #fff !important;
+  background: #f3f2ef !important;
+  box-shadow: 0 18px 34px rgba(22, 24, 27, 0.13) !important;
+}
+
+.product-portfolio-theme .pdf-works-page {
+  background: #f3f2ef !important;
+}
+
+.product-portfolio-theme .pdf-works-page::before {
+  background:
+    linear-gradient(#f3f2ef, #f3f2ef),
+    radial-gradient(circle at 92% 8%, rgba(15, 22, 28, 0.06), transparent 18rem) !important;
+}
+
+.product-portfolio-theme .pdf-works-page > div {
+  max-width: min(1320px, calc(100vw - 2rem));
+  margin-inline: auto;
+  color: #111 !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:first-child {
+  display: none !important;
+}
+
+.product-portfolio-theme .pdf-works-page [data-section-title] {
+  margin-top: clamp(2.2rem, 4vw, 4rem);
+  margin-bottom: clamp(1rem, 2vw, 1.45rem);
+  border-bottom: 1px solid rgba(16, 18, 20, 0.14) !important;
+  padding-bottom: 0.9rem;
+}
+
+.product-portfolio-theme .pdf-works-page [data-section-title]::before {
+  width: 0.42rem;
+  height: 0.42rem;
+  background: #111;
+}
+
+.product-portfolio-theme .pdf-main-grid {
+  display: grid !important;
+  max-width: 100%;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  gap: clamp(0.75rem, 1.3vw, 1.2rem) !important;
+}
+
+.product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2 {
+  max-width: 100% !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card {
+  grid-column: span 3;
+  aspect-ratio: 1 / 1;
+  align-self: stretch;
+  border-radius: 0.75rem !important;
+  background: #fff !important;
+  outline: 1px solid rgba(16, 18, 20, 0.08);
+  box-shadow: 0 12px 30px rgba(16, 18, 20, 0.08) !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:first-child,
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(6) {
+  grid-column: span 6;
+  grid-row: span 2;
+  aspect-ratio: 1 / 1;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card img,
+.product-portfolio-theme .pdf-render-gallery .image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  padding: clamp(0.35rem, 0.8vw, 0.75rem);
+}
+
+.product-portfolio-theme .pdf-poster-gallery {
+  max-width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: clamp(0.75rem, 1.3vw, 1.15rem) !important;
+}
+
+.product-portfolio-theme .pdf-poster-gallery .works-compact-gallery__column {
+  min-width: 0;
+  display: flex !important;
+  gap: clamp(0.75rem, 1.3vw, 1.15rem);
+}
+
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-child(n+3) {
+  display: flex !important;
+}
+
+.product-portfolio-theme .pdf-poster-gallery .image-card {
+  aspect-ratio: 750 / 1200;
+  border-radius: 0.75rem !important;
+  background: #141414 !important;
+  box-shadow: 0 16px 32px rgba(16, 18, 20, 0.12) !important;
+}
+
+.product-portfolio-theme .pdf-poster-gallery .image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.product-portfolio-theme .detail-packaging-row {
+  max-width: 100%;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: clamp(0.85rem, 1.5vw, 1.4rem) !important;
+  align-items: stretch;
+}
+
+.product-portfolio-theme .detail-packaging-row > .packaging-gallery--inline {
+  grid-column: 1 / -1;
+}
+
+.product-portfolio-theme .detail-packaging-row > .image-card {
+  display: none !important;
+  aspect-ratio: 750 / 1200;
+  border-radius: 0.75rem !important;
+  background: #161616 !important;
+}
+
+.product-portfolio-theme .detail-packaging-row > .image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.product-portfolio-theme .pdf-packaging-strip {
+  display: grid !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+  gap: clamp(0.7rem, 1.2vw, 1rem) !important;
+  min-height: clamp(23rem, 31vw, 31rem);
+  border-radius: 0.9rem;
+  background: #e8e5df !important;
+  padding: clamp(0.75rem, 1.4vw, 1rem);
+}
+
+.product-portfolio-theme .pdf-packaging-strip .packaging-gallery__card {
+  grid-column: span 4 !important;
+  grid-row: span 1 !important;
+  border-radius: 0.6rem !important;
+  background: #fff !important;
+  outline: 1px solid rgba(16, 18, 20, 0.08);
+}
+
+.product-portfolio-theme .pdf-packaging-strip .packaging-gallery__card:nth-child(1),
+.product-portfolio-theme .pdf-packaging-strip .packaging-gallery__card:nth-child(2) {
+  grid-column: span 2 !important;
+  grid-row: span 2 !important;
+}
+
+.product-portfolio-theme .pdf-packaging-strip .packaging-gallery__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  padding: 0.35rem;
+}
+
+.product-portfolio-theme .pdf-render-gallery {
+  max-width: 100%;
+  column-count: 4 !important;
+  column-gap: clamp(0.75rem, 1.3vw, 1rem) !important;
+}
+
+.product-portfolio-theme .pdf-render-gallery .image-card {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: clamp(0.75rem, 1.3vw, 1rem) !important;
+  break-inside: avoid;
+  border-radius: 0.75rem !important;
+  background: #fff !important;
+  box-shadow: 0 12px 30px rgba(16, 18, 20, 0.08) !important;
+}
+
+.product-portfolio-theme .image-card figcaption,
+.product-portfolio-theme .packaging-gallery__card figcaption {
+  color: #fff !important;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.58) 56%, transparent) !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9) !important;
+}
+
+.product-portfolio-theme .pdf-render-gallery,
+.product-portfolio-theme .works-masonry-gallery--3d {
+  display: grid !important;
+  max-width: 100% !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  column-count: initial !important;
+  gap: clamp(0.75rem, 1.3vw, 1.05rem) !important;
+}
+
+.product-portfolio-theme .pdf-render-gallery::before,
+.product-portfolio-theme .works-masonry-gallery--3d::before {
+  content: '场景渲染';
+  grid-column: 1 / -1;
+  margin-top: 0.2rem;
+  color: rgba(17, 17, 17, 0.72);
+  font-size: 0.86rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.product-portfolio-theme .pdf-render-gallery::after,
+.product-portfolio-theme .works-masonry-gallery--3d::after {
+  content: '产品特写 / 白底 / 电商场景';
+  grid-column: 1 / -1;
+  order: 8;
+  margin: 0.9rem 0 -0.15rem;
+  color: rgba(17, 17, 17, 0.72);
+  font-size: 0.86rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.product-portfolio-theme .pdf-render-gallery .image-card,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card {
+  display: block !important;
+  width: auto !important;
+  margin-bottom: 0 !important;
+  break-inside: auto;
+  border-radius: 0.75rem !important;
+  background: #fff !important;
+  box-shadow: 0 12px 30px rgba(16, 18, 20, 0.08) !important;
+}
+
+.product-portfolio-theme .pdf-render-gallery .image-card img,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  padding: clamp(0.35rem, 0.8vw, 0.75rem);
+}
+
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(1),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(1),
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(2),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(2),
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(7),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(7) {
+  grid-column: span 4;
+  aspect-ratio: auto;
+}
+
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(9),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(9),
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(11),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(11) {
+  grid-column: span 4;
+  aspect-ratio: auto;
+  order: 9;
+}
+
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(3),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(3),
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(4),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(4),
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(5),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(5),
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(6),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(6),
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(8),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(8),
+.product-portfolio-theme .pdf-render-gallery .image-card:nth-child(10),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(10) {
+  grid-column: span 3;
+  aspect-ratio: auto;
+  order: 10;
+}
+
+@media (max-width: 1100px) {
+  .product-portfolio-theme .pdf-main-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+
+  .product-portfolio-theme .pdf-main-grid .image-card {
+    grid-column: span 3;
+  }
+
+  .product-portfolio-theme .pdf-poster-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .product-portfolio-theme .pdf-render-gallery {
+    column-count: 3 !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .product-portfolio-theme .hero-reference-bg {
+    min-height: 100svh;
+  }
+
+  .product-portfolio-theme .portfolio-hero-title {
+    max-width: 100%;
+  }
+
+  .product-portfolio-theme .hero-image-reel {
+    opacity: 0.28 !important;
+  }
+
+  .product-portfolio-theme .pdf-main-grid,
+  .product-portfolio-theme .pdf-poster-gallery,
+  .product-portfolio-theme .detail-packaging-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .product-portfolio-theme .pdf-main-grid .image-card,
+  .product-portfolio-theme .pdf-main-grid .image-card:first-child,
+  .product-portfolio-theme .pdf-main-grid .image-card:nth-child(6) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .product-portfolio-theme .pdf-packaging-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    min-height: auto;
+  }
+
+  .product-portfolio-theme .pdf-packaging-strip .packaging-gallery__card,
+  .product-portfolio-theme .pdf-packaging-strip .packaging-gallery__card:nth-child(1),
+  .product-portfolio-theme .pdf-packaging-strip .packaging-gallery__card:nth-child(2) {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    aspect-ratio: var(--packaging-aspect);
+  }
+
+  .product-portfolio-theme .pdf-render-gallery {
+    column-count: 1 !important;
+  }
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d {
+  display: block !important;
+  max-width: min(1080px, 100%) !important;
+  margin-inline: auto;
+  column-count: 3 !important;
+  column-gap: clamp(0.8rem, 1.5vw, 1.15rem) !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d::before {
+  content: '3D DESIGN';
+  display: block;
+  column-span: all;
+  margin: 0 0 0.85rem;
+  color: rgba(17, 17, 17, 0.68);
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d::after {
+  display: none !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) {
+  display: inline-block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 0 clamp(0.8rem, 1.5vw, 1.15rem) !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+  order: initial !important;
+  aspect-ratio: auto !important;
+  overflow: hidden;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: clamp(0.45rem, 0.9vw, 0.7rem) !important;
+}
+
+@media (max-width: 980px) {
+  .product-portfolio-theme .works-masonry-gallery--3d {
+    column-count: 2 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-portfolio-theme .works-masonry-gallery--3d {
+    column-count: 1 !important;
+  }
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d {
+  display: grid !important;
+  max-width: min(1120px, 100%) !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  grid-auto-rows: 8px;
+  grid-auto-flow: dense;
+  column-count: initial !important;
+  column-gap: clamp(0.75rem, 1.35vw, 1rem) !important;
+  row-gap: clamp(0.55rem, 0.9vw, 0.75rem) !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d::before {
+  content: '3D DESIGN';
+  grid-column: 1 / -1;
+  margin: 0 0 0.15rem;
+  color: rgba(17, 17, 17, 0.66);
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  aspect-ratio: auto !important;
+  grid-column: span 3 / span 3 !important;
+  grid-row: span 24 / span 24 !important;
+  align-self: stretch;
+  overflow: hidden;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: clamp(0.35rem, 0.75vw, 0.65rem) !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(1),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(2) {
+  grid-column: span 4;
+  grid-column: span 4 / span 4 !important;
+  grid-row: span 30 / span 30 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(7) {
+  grid-column: span 4 / span 4 !important;
+  grid-row: span 28 / span 28 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(3),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(9),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(11) {
+  grid-column: span 4 / span 4 !important;
+  grid-row: span 14 / span 14 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(4),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(5),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(6),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(8),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(10) {
+  grid-column: span 2 / span 2 !important;
+  grid-row: span 14 / span 14 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(1) img,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(2) img,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(7) img {
+  object-fit: contain !important;
+  padding: clamp(0.35rem, 0.75vw, 0.65rem) !important;
+}
+
+@media (max-width: 980px) {
+  .product-portfolio-theme .works-masonry-gallery--3d {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+
+  .product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) {
+    grid-column: span 3 / span 3 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-portfolio-theme .works-masonry-gallery--3d {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: auto;
+  }
+
+  .product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) {
+    grid-column: span 1 / span 1 !important;
+    grid-row: auto !important;
+    height: auto !important;
+  }
+
+  .product-portfolio-theme .works-masonry-gallery--3d .image-card img {
+    height: auto !important;
+  }
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d {
+  display: grid !important;
+  max-width: min(1120px, 100%) !important;
+  margin-inline: auto;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  grid-auto-rows: auto !important;
+  column-count: initial !important;
+  gap: clamp(0.85rem, 1.45vw, 1.15rem) !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d::before {
+  content: '3D DESIGN';
+  grid-column: 1 / -1;
+  margin: 0 0 0.1rem;
+  color: rgba(17, 17, 17, 0.62);
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d::after {
+  display: none !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+  aspect-ratio: 4 / 3 !important;
+  overflow: hidden;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(1),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(2),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(7) {
+  aspect-ratio: 3 / 4 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card img,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: clamp(0.45rem, 0.85vw, 0.75rem) !important;
+}
+
+@media (max-width: 980px) {
+  .product-portfolio-theme .works-masonry-gallery--3d {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-portfolio-theme .works-masonry-gallery--3d {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+#works .detail-packaging-row{grid-template-columns:minmax(0,1fr)!important}#works .detail-packaging-row>.image-card{display:none!important}#works .detail-packaging-row>.packaging-gallery--inline{grid-column:1/-1!important}
+
+/* Move 3D section heading back to the left title position. */
+.product-portfolio-theme #works [data-section-title] {
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+  text-align: left !important;
+}
+
+.product-portfolio-theme #works [data-section-title] h2 {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+  text-align: left !important;
+  transform-origin: left center !important;
+}
+
+.product-portfolio-theme #works [data-section-title] p {
+  margin-left: auto !important;
+  text-align: right !important;
+}
+
+/* Place the 3D section title in the left reserved heading slot. */
+.product-portfolio-theme #works [data-section-title]:has(h2) {
+  position: relative !important;
+}
+
+.product-portfolio-theme #works [data-section-title]:has(h2 span:nth-child(1)) h2 {
+  flex: 0 0 auto !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  text-align: left !important;
+}
+
+.product-portfolio-theme #works [data-section-title]:has(h2 span:nth-child(1)) p {
+  margin-left: auto !important;
+  text-align: right !important;
+}
+
+.product-portfolio-theme #works [data-section-title]:has(h2 span:nth-child(1)):nth-of-type(n+3) h2 {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0.45rem !important;
+  transform: skewX(-5deg) !important;
+  z-index: 3 !important;
+}
+
+.product-portfolio-theme #works [data-section-title]:has(h2 span:nth-child(1)):nth-of-type(n+3) {
+  min-height: 4.4rem !important;
+  padding-left: 0 !important;
+}
+
+/* Hide the works section when the portfolio page should only keep profile/contact content. */
+.product-portfolio-theme #works{display:none!important}
+
+/* Remove shadows from the final THANKS/contact block. */
+.product-portfolio-theme .contact-poster,
+.product-portfolio-theme .contact-poster *,
+.product-portfolio-theme .contact-poster::before,
+.product-portfolio-theme .contact-poster::after,
+.product-portfolio-theme .contact-poster__inner,
+.product-portfolio-theme .contact-poster__title,
+.product-portfolio-theme .contact-poster__glow,
+.product-portfolio-theme .contact-poster__badge,
+.product-portfolio-theme .contact-poster__links,
+.product-portfolio-theme .contact-poster__note {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.product-portfolio-theme .contact-poster__glow {
+  display: none !important;
+}
+
+/* Portfolio works board: compact black/red layout inspired by product presentation sheets. */
+.product-portfolio-theme #works.pdf-works-page {
+  display: block !important;
+  min-height: auto !important;
+  background: #050505 !important;
+  color: #fff !important;
+  padding-top: clamp(1.5rem, 3vw, 2.75rem) !important;
+  padding-bottom: clamp(2rem, 4vw, 3.5rem) !important;
+}
+
+.product-portfolio-theme #works > div {
+  max-width: 1180px !important;
+  margin-inline: auto !important;
+  padding-inline: clamp(1rem, 2.4vw, 1.75rem) !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:first-child {
+  display: none !important;
+}
+
+.product-portfolio-theme #works [data-section-title] {
+  min-height: auto !important;
+  margin: clamp(1rem, 2vw, 1.5rem) 0 0.9rem !important;
+  padding: 0.55rem 0 0.55rem !important;
+  border-top: 10px solid #ff2f2f !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #fff !important;
+}
+
+.product-portfolio-theme #works [data-section-title]::before {
+  display: none !important;
+}
+
+.product-portfolio-theme #works [data-section-title] h2,
+.product-portfolio-theme #works [data-section-title]:has(h2 span:nth-child(1)):nth-of-type(n+3) h2 {
+  position: static !important;
+  transform: none !important;
+  color: #fff !important;
+  font-size: clamp(1.7rem, 4vw, 3.45rem) !important;
+  line-height: 0.95 !important;
+  letter-spacing: 0 !important;
+  text-shadow: none !important;
+}
+
+.product-portfolio-theme #works [data-section-title] h2 span {
+  color: #fff !important;
+  margin-right: 0.18em;
+}
+
+.product-portfolio-theme #works [data-section-title] p {
+  color: #fff !important;
+  font-size: clamp(0.8rem, 1.4vw, 1.45rem) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase;
+}
+
+.product-portfolio-theme #works [data-section-title] h2::after {
+  content: "";
+  display: inline-block;
+  width: 0.42em;
+  height: 0.42em;
+  margin-left: 0.22em;
+  border-radius: 999px;
+  background: #ff2f2f;
+  vertical-align: 0.05em;
+}
+
+.product-portfolio-theme #works .image-card,
+.product-portfolio-theme #works .packaging-gallery__card {
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 8px !important;
+  background: #111 !important;
+  box-shadow: none !important;
+}
+
+.product-portfolio-theme #works .image-card img,
+.product-portfolio-theme #works .packaging-gallery__card img {
+  background: #111 !important;
+}
+
+.product-portfolio-theme #works .image-card figcaption,
+.product-portfolio-theme #works .packaging-gallery__card figcaption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.86), transparent) !important;
+  color: #fff !important;
+  font-size: 0.78rem !important;
+}
+
+.product-portfolio-theme .pdf-main-grid {
+  display: grid !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  gap: clamp(0.55rem, 1.2vw, 0.9rem) !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card,
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(n) {
+  grid-column: span 3 / span 3 !important;
+  aspect-ratio: 3 / 4 !important;
+  height: auto !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:first-child {
+  grid-column: span 6 / span 6 !important;
+  grid-row: span 2 / span 2 !important;
+  aspect-ratio: 1 / 1 !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(6),
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(7) {
+  grid-column: span 6 / span 6 !important;
+  aspect-ratio: 16 / 9 !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card img,
+.product-portfolio-theme .pdf-main-grid .image-card:first-child img,
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(6) img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+
+.product-portfolio-theme .detail-head-gallery,
+.product-portfolio-theme .works-masonry-gallery--3d {
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: clamp(0.6rem, 1.2vw, 0.95rem) !important;
+  max-width: none !important;
+  margin-top: clamp(1.6rem, 3vw, 2.3rem) !important;
+}
+
+.product-portfolio-theme .detail-head-gallery::before,
+.product-portfolio-theme .works-masonry-gallery--3d::before,
+.product-portfolio-theme .detail-packaging-row::before {
+  grid-column: 1 / -1;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-height: auto;
+  margin: 0 0 0.15rem;
+  padding: 0.5rem 0 0.55rem;
+  border-top: 10px solid #ff2f2f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.product-portfolio-theme .detail-head-gallery::before {
+  content: "03  主题渲染 / Effect Display";
+}
+
+.product-portfolio-theme .detail-packaging-row::before {
+  content: "04  详情页与包装 / Detail Page";
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d::before {
+  content: "05  产品渲染 / Product Rendering" !important;
+}
+
+.product-portfolio-theme .detail-head-gallery .works-compact-gallery__column {
+  display: contents !important;
+}
+
+.product-portfolio-theme .detail-head-gallery .image-card,
+.product-portfolio-theme .detail-head-gallery .image-card:nth-child(n) {
+  grid-column: span 2 / span 2 !important;
+  height: clamp(310px, 35vw, 520px) !important;
+  aspect-ratio: auto !important;
+  margin: 0 !important;
+}
+
+.product-portfolio-theme .detail-head-gallery .image-card img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+
+.product-portfolio-theme .detail-packaging-row {
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: clamp(0.6rem, 1.2vw, 0.95rem) !important;
+  margin-top: clamp(1.6rem, 3vw, 2.3rem) !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.product-portfolio-theme .detail-packaging-row > .packaging-gallery--inline {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: clamp(0.6rem, 1.2vw, 0.95rem) !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card,
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(n) {
+  grid-column: span 2 / span 2 !important;
+  grid-row: auto !important;
+  height: clamp(220px, 24vw, 360px) !important;
+  aspect-ratio: auto !important;
+}
+
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(1),
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(2) {
+  grid-column: span 1 / span 1 !important;
+}
+
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  padding: 0.55rem !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d {
+  margin-bottom: 0 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) {
+  grid-column: span 2 / span 2 !important;
+  aspect-ratio: 4 / 5 !important;
+  height: auto !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(1),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(2) {
+  grid-column: span 3 / span 3 !important;
+  aspect-ratio: 4 / 5 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(3),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(10),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(11) {
+  aspect-ratio: 16 / 10 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card img,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 900px) {
+  .product-portfolio-theme .pdf-main-grid,
+  .product-portfolio-theme .detail-head-gallery,
+  .product-portfolio-theme .detail-packaging-row,
+  .product-portfolio-theme .detail-packaging-row > .packaging-gallery--inline,
+  .product-portfolio-theme .works-masonry-gallery--3d {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .product-portfolio-theme .pdf-main-grid .image-card,
+  .product-portfolio-theme .pdf-main-grid .image-card:nth-child(n),
+  .product-portfolio-theme .detail-head-gallery .image-card,
+  .product-portfolio-theme .detail-packaging-row .packaging-gallery__card,
+  .product-portfolio-theme .works-masonry-gallery--3d .image-card,
+  .product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) {
+    grid-column: span 2 / span 2 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-portfolio-theme .pdf-main-grid,
+  .product-portfolio-theme .detail-head-gallery,
+  .product-portfolio-theme .detail-packaging-row,
+  .product-portfolio-theme .detail-packaging-row > .packaging-gallery--inline,
+  .product-portfolio-theme .works-masonry-gallery--3d {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .product-portfolio-theme .pdf-main-grid .image-card,
+  .product-portfolio-theme .pdf-main-grid .image-card:nth-child(n),
+  .product-portfolio-theme .pdf-main-grid .image-card:first-child,
+  .product-portfolio-theme .pdf-main-grid .image-card:nth-child(6),
+  .product-portfolio-theme .pdf-main-grid .image-card:nth-child(7),
+  .product-portfolio-theme .detail-head-gallery .image-card,
+  .product-portfolio-theme .detail-packaging-row .packaging-gallery__card,
+  .product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(n),
+  .product-portfolio-theme .works-masonry-gallery--3d .image-card,
+  .product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) {
+    grid-column: span 1 / span 1 !important;
+  }
+
+  .product-portfolio-theme #works [data-section-title] {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 0.3rem !important;
+  }
+}
+
+/* Last-mile override: flat product boards should stay fully readable. */
+.product-portfolio-theme #works .pdf-main-grid .image-card img,
+.product-portfolio-theme #works .pdf-main-grid .image-card:nth-child(n) img,
+.product-portfolio-theme #works .pdf-main-grid .image-card:first-child img,
+.product-portfolio-theme #works .pdf-main-grid .image-card:nth-child(6) img,
+.product-portfolio-theme #works .pdf-main-grid .image-card:nth-child(7) img,
+.product-portfolio-theme #works .pdf-main-grid .image-card:nth-child(8) img {
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 0 !important;
+}
+
+/* Image layout tuning: cleaner reading rhythm and less aggressive cropping. */
+.product-portfolio-theme #works > div {
+  max-width: 1120px !important;
+}
+
+.product-portfolio-theme #works [data-section-title] {
+  margin-top: clamp(1.4rem, 2.6vw, 2rem) !important;
+}
+
+.product-portfolio-theme .pdf-main-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: clamp(0.5rem, 1vw, 0.75rem) !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:first-child {
+  grid-column: span 2 / span 2 !important;
+  grid-row: span 2 / span 2 !important;
+  aspect-ratio: 3 / 4 !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(n) {
+  aspect-ratio: 3 / 4 !important;
+}
+
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(6),
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(7),
+.product-portfolio-theme .pdf-main-grid .image-card:nth-child(8) {
+  grid-column: span 2 / span 2 !important;
+  aspect-ratio: 4 / 3 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid .image-card img {
+  object-fit: contain !important;
+  background: #080808 !important;
+}
+
+.product-portfolio-theme .detail-head-gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.product-portfolio-theme .detail-head-gallery .image-card,
+.product-portfolio-theme .detail-head-gallery .image-card:nth-child(n) {
+  grid-column: span 1 / span 1 !important;
+  height: auto !important;
+  aspect-ratio: 3 / 4 !important;
+}
+
+.product-portfolio-theme .detail-head-gallery .image-card img {
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+
+.product-portfolio-theme .detail-packaging-row > .packaging-gallery--inline {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card,
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(n),
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(1),
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(2) {
+  grid-column: span 1 / span 1 !important;
+  height: auto !important;
+  aspect-ratio: 4 / 3 !important;
+}
+
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(1),
+.product-portfolio-theme .detail-packaging-row .packaging-gallery__card:nth-child(2) {
+  aspect-ratio: 3 / 4 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(1),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(2) {
+  grid-column: span 1 / span 1 !important;
+  aspect-ratio: 4 / 5 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(3),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(10),
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(11) {
+  grid-column: span 2 / span 2 !important;
+  aspect-ratio: 16 / 10 !important;
+}
+
+.product-portfolio-theme .works-masonry-gallery--3d .image-card img,
+.product-portfolio-theme .works-masonry-gallery--3d .image-card:nth-child(n) img {
+  object-fit: cover !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card,
+.product-portfolio-theme #works .detail-head-gallery .image-card,
+.product-portfolio-theme #works .detail-packaging-row .packaging-gallery__card,
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  justify-self: stretch !important;
+  align-self: stretch !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:first-child {
+  grid-column: span 2 / span 2 !important;
+  grid-row: span 2 / span 2 !important;
+  aspect-ratio: 3 / 4 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: clamp(0.5rem, 1vw, 0.75rem) !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) {
+  grid-column: span 1 / span 1 !important;
+  grid-row: auto !important;
+  aspect-ratio: 3 / 4 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:first-child {
+  grid-column: span 2 / span 2 !important;
+  grid-row: span 2 / span 2 !important;
+  aspect-ratio: 3 / 4 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(6),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(7),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8) {
+  grid-column: span 2 / span 2 !important;
+  aspect-ratio: 4 / 3 !important;
+}
+
+.product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2 {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+/* Switch the works presentation area back to a clean white page. */
+.product-portfolio-theme #works.pdf-works-page,
+.product-portfolio-theme .pdf-works-page > div,
+.product-portfolio-theme #works > div,
+.product-portfolio-theme #works .w-full,
+.product-portfolio-theme .detail-head-gallery,
+.product-portfolio-theme .detail-packaging-row,
+.product-portfolio-theme .works-masonry-gallery--3d {
+  background: #fff !important;
+  color: #050505 !important;
+}
+
+.product-portfolio-theme #works [data-section-title] {
+  border-bottom-color: rgba(5, 5, 5, 0.16) !important;
+  color: #050505 !important;
+}
+
+.product-portfolio-theme #works [data-section-title] h2,
+.product-portfolio-theme #works [data-section-title] h2 span,
+.product-portfolio-theme #works [data-section-title] p {
+  color: #050505 !important;
+}
+
+.product-portfolio-theme #works .image-card,
+.product-portfolio-theme #works .packaging-gallery__card {
+  background: #f7f7f7 !important;
+  border-color: rgba(5, 5, 5, 0.12) !important;
+}
+
+.product-portfolio-theme #works .image-card img,
+.product-portfolio-theme #works .packaging-gallery__card img,
+.product-portfolio-theme #works .pdf-main-grid .image-card img {
+  background: #fff !important;
+}
+
+/* Final pure-white layer for the selected works block. */
+.product-portfolio-theme #works,
+.product-portfolio-theme #works *,
+.product-portfolio-theme #works::before,
+.product-portfolio-theme #works::after {
+  --tw-bg-opacity: 1 !important;
+}
+
+.product-portfolio-theme #works,
+.product-portfolio-theme #works > div,
+.product-portfolio-theme #works .pdf-main-grid,
+.product-portfolio-theme #works .works-compact-gallery,
+.product-portfolio-theme #works .works-compact-gallery__column,
+.product-portfolio-theme #works .works-masonry-gallery,
+.product-portfolio-theme #works .packaging-gallery,
+.product-portfolio-theme #works .detail-packaging-row {
+  background: #fff !important;
+  background-color: #fff !important;
+  background-image: none !important;
+}
+
+.product-portfolio-theme #works .image-card,
+.product-portfolio-theme #works .packaging-gallery__card {
+  background: #fff !important;
+  background-color: #fff !important;
+  box-shadow: none !important;
+}
+
+.product-portfolio-theme #works .image-card img,
+.product-portfolio-theme #works .packaging-gallery__card img {
+  background: #fff !important;
+  background-color: #fff !important;
+}
+
+/* Force the whole works viewport to a single pure-white layer. */
+html:has(.product-portfolio-theme #works),
+body:has(.product-portfolio-theme #works),
+#root:has(.product-portfolio-theme #works),
+.product-portfolio-theme {
+  background: #fff !important;
+  background-color: #fff !important;
+}
+
+.product-portfolio-theme section#works.section-band.section-light.pdf-works-page.portfolio-shell,
+.product-portfolio-theme section#works.section-band.section-light.pdf-works-page.portfolio-shell::before,
+.product-portfolio-theme section#works.section-band.section-light.pdf-works-page.portfolio-shell::after,
+.product-portfolio-theme section#works.section-band.section-light.pdf-works-page.portfolio-shell > div {
+  background: #fff !important;
+  background-color: #fff !important;
+  background-image: none !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid,
+.product-portfolio-theme #works .works-compact-gallery,
+.product-portfolio-theme #works .works-masonry-gallery,
+.product-portfolio-theme #works .packaging-gallery,
+.product-portfolio-theme #works .image-card,
+.product-portfolio-theme #works .packaging-gallery__card {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Reclassify works into three portfolio groups: main images, detail pages, 3D rendering. */
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p {
+  font-size: 0 !important;
+  line-height: 1 !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p::before,
+.product-portfolio-theme #works .detail-head-gallery::before {
+  color: #050505 !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2::before {
+  content: "01. 亚马逊A+";
+  font-size: clamp(2rem, 4.4vw, 4rem);
+  line-height: 0.95;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p::before {
+  content: "AMAZON A+ / PRODUCT DETAIL";
+  font-size: clamp(0.82rem, 1.35vw, 1.3rem);
+  letter-spacing: 0.04em;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::before {
+  content: "02. 主图类    DETAIL PAGE DESIGN" !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: auto !important;
+  margin: clamp(1.5rem, 3vw, 2.4rem) 0 0.9rem !important;
+  padding: 0.55rem 0 !important;
+  border-top: 10px solid #ff2f2f !important;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.16) !important;
+  background: #fff !important;
+  font-size: clamp(2rem, 4.4vw, 4rem) !important;
+  line-height: 0.95 !important;
+  white-space: pre-wrap !important;
+}
+
+.product-portfolio-theme #works .detail-packaging-row::before {
+  display: none !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2::before {
+  content: "03. 三维渲染类";
+  font-size: clamp(2rem, 4.4vw, 4rem);
+  line-height: 0.95;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p::before {
+  content: "3D RENDERING / PRODUCT RENDERING";
+  font-size: clamp(0.82rem, 1.35vw, 1.3rem);
+  letter-spacing: 0.04em;
+}
+
+.product-portfolio-theme #works .works-masonry-gallery--3d::before {
+  display: none !important;
+  content: none !important;
+}
+
+.product-portfolio-theme #works [data-section-title] h2::after {
+  background: #ff2f2f !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2 {
+  color: transparent !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2 *,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2 *,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p *,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p * {
+  color: transparent !important;
+  font-size: 0 !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p::before {
+  color: #050505 !important;
+}
+
+/* Works typography: bold poster lettering inspired by the hero PERSONAL WORKS type. */
+.product-portfolio-theme #works,
+.product-portfolio-theme #works [data-section-title],
+.product-portfolio-theme #works .detail-head-gallery::before,
+.product-portfolio-theme #works .image-card figcaption,
+.product-portfolio-theme #works .packaging-gallery__card figcaption {
+  font-family: Impact, Haettenschweiler, "Arial Black", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2::before,
+.product-portfolio-theme #works .detail-head-gallery::before {
+  color: #0b0b0b !important;
+  display: inline-block !important;
+  font-family: Impact, Haettenschweiler, "Arial Black", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif !important;
+  font-size: clamp(2.9rem, 6.4vw, 6.9rem) !important;
+  font-style: italic !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  line-height: 0.82 !important;
+  text-transform: uppercase !important;
+  transform: skewX(-6deg) !important;
+  transform-origin: left center !important;
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.08);
+  text-shadow:
+    4px 0 0 #d7d7d7,
+    7px 7px 0 rgba(0, 0, 0, 0.13) !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p::before {
+  color: #0b0b0b !important;
+  display: inline-block !important;
+  font-family: Impact, Haettenschweiler, "Arial Black", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif !important;
+  font-size: clamp(1rem, 1.7vw, 1.7rem) !important;
+  font-style: italic !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  line-height: 0.95 !important;
+  transform: skewX(-6deg) !important;
+  text-transform: uppercase !important;
+}
+
+.product-portfolio-theme #works [data-section-title] {
+  align-items: flex-end !important;
+  border-top-width: 8px !important;
+  gap: clamp(0.8rem, 2vw, 1.6rem) !important;
+  padding-top: clamp(0.75rem, 1.6vw, 1.1rem) !important;
+}
+
+.product-portfolio-theme #works [data-section-title] h2::after {
+  width: clamp(0.45rem, 1vw, 0.78rem) !important;
+  height: clamp(0.45rem, 1vw, 0.78rem) !important;
+  transform: skewX(6deg) !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::before {
+  content: "02. 主图类" !important;
+  justify-content: flex-start !important;
+}
+
+.product-portfolio-theme #works .image-card figcaption,
+.product-portfolio-theme #works .packaging-gallery__card figcaption {
+  font-style: italic !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  text-transform: uppercase !important;
+}
+
+/* Keep section subtitles horizontal and readable beside the oversized titles. */
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p {
+  flex: 0 0 auto !important;
+  max-width: min(42vw, 430px) !important;
+  min-width: max-content !important;
+  overflow: visible !important;
+  text-align: right !important;
+  white-space: nowrap !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p::before {
+  font-size: clamp(0.9rem, 1.25vw, 1.25rem) !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Scale down oversized works category headings while keeping the poster style. */
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2::before,
+.product-portfolio-theme #works .detail-head-gallery::before {
+  font-size: clamp(2.15rem, 4.25vw, 4.6rem) !important;
+  line-height: 0.88 !important;
+  text-shadow:
+    3px 0 0 #d7d7d7,
+    5px 5px 0 rgba(0, 0, 0, 0.11) !important;
+}
+
+.product-portfolio-theme #works [data-section-title] {
+  padding-top: clamp(0.45rem, 1vw, 0.8rem) !important;
+  padding-bottom: clamp(0.45rem, 1vw, 0.8rem) !important;
+}
+
+/* Smaller final category-title scale. */
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2::before,
+.product-portfolio-theme #works .detail-head-gallery::before {
+  font-size: clamp(1.75rem, 3.25vw, 3.45rem) !important;
+  line-height: 0.92 !important;
+  text-shadow:
+    2px 0 0 #d7d7d7,
+    4px 4px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) p::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) p::before {
+  font-size: clamp(0.78rem, 1.05vw, 1.05rem) !important;
+}
+
+/* Final size/color pass from visual review. */
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(2) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2::before,
+.product-portfolio-theme #works .detail-head-gallery::before {
+  font-size: clamp(1.45rem, 2.75vw, 2.95rem) !important;
+  line-height: 0.95 !important;
+  text-shadow:
+    1.5px 0 0 #d9d9d9,
+    3px 3px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-portfolio-theme #works [data-section-title],
+.product-portfolio-theme #works .detail-head-gallery::before {
+  border-top-color: #111 !important;
+}
+
+.product-portfolio-theme #works [data-section-title] h2::after {
+  background: #111 !important;
+}
+
+.product-portfolio-theme .contact-poster,
+.product-portfolio-theme .contact-poster__inner {
+  background: #fff !important;
+  background-color: #fff !important;
+  color: #111 !important;
+}
+
+.product-portfolio-theme .contact-poster__badge,
+.product-portfolio-theme .contact-poster__links,
+.product-portfolio-theme .contact-poster__links p,
+.product-portfolio-theme .contact-poster__links span,
+.product-portfolio-theme .contact-poster__links strong,
+.product-portfolio-theme .contact-poster__note {
+  color: #111 !important;
+  opacity: 1 !important;
+}
+
+/* Amazon reference layout: left vertical feature rail + right campaign collage. */
+.product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2,
+.product-portfolio-theme #works .pdf-main-grid {
+  display: grid !important;
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  grid-auto-rows: clamp(62px, 6.4vw, 92px) !important;
+  gap: clamp(0.45rem, 0.8vw, 0.7rem) !important;
+  align-items: stretch !important;
+  margin-top: 0.65rem !important;
+  padding: clamp(0.7rem, 1.3vw, 1rem) !important;
+  border-radius: 0 !important;
+  background: #050505 !important;
+  background-color: #050505 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  background: #0b0d12 !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card img {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  object-position: center !important;
+  padding: 0 !important;
+  background: #050505 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(7) {
+  order: 1 !important;
+  grid-column: 1 / span 3 !important;
+  grid-row: span 9 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8) {
+  order: 2 !important;
+  grid-column: 4 / span 9 !important;
+  grid-row: span 2 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(6) {
+  order: 3 !important;
+  grid-column: 4 / span 3 !important;
+  grid-row: span 2 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9) {
+  order: 4 !important;
+  grid-column: 7 / span 3 !important;
+  grid-row: span 2 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10) {
+  order: 5 !important;
+  grid-column: 10 / span 3 !important;
+  grid-row: span 2 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11) {
+  order: 6 !important;
+  grid-column: 4 / span 9 !important;
+  grid-row: span 3 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+  order: 7 !important;
+  grid-column: 4 / span 9 !important;
+  grid-row: span 2 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(-n+5) {
+  order: 20 !important;
+  grid-column: span 2 / span 2 !important;
+  grid-row: span 2 !important;
+  aspect-ratio: auto !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n+13) {
+  order: 21 !important;
+  grid-column: span 2 / span 2 !important;
+  grid-row: span 2 !important;
+  aspect-ratio: auto !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) img {
+  object-fit: cover !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(7) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(6) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(-n+5) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n+13) img {
+  object-fit: contain !important;
+}
+
+@media (max-width: 780px) {
+  .product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2,
+  .product-portfolio-theme #works .pdf-main-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-rows: auto !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) {
+    grid-column: span 1 / span 1 !important;
+    grid-row: auto !important;
+    aspect-ratio: 3 / 4 !important;
+  }
+}
+
+/* Main visual final layout: folder images stacked top-to-bottom in original ratio. */
+.product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2,
+.product-portfolio-theme #works .pdf-main-grid {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  max-width: min(980px, 100%) !important;
+  margin: 0.75rem auto clamp(2rem, 4vw, 3rem) !important;
+  padding: 0 !important;
+  gap: clamp(0.85rem, 1.6vw, 1.25rem) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n+7) {
+  display: none !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(-n+6) {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  aspect-ratio: auto !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+  order: initial !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(-n+6) img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* Match source image ratios: square Amazon tiles and wide A+ panels. */
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(7) {
+  grid-column: 1 / span 3 !important;
+  grid-row: span 3 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8) {
+  grid-column: 4 / span 9 !important;
+  grid-row: span 3 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+  grid-column: 4 / span 9 !important;
+  grid-row: span 3 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(7) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) img {
+  object-fit: contain !important;
+}
+
+/* Final main-visual grouping: six Amazon squares + five A+ panels, compact size. */
+.product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2,
+.product-portfolio-theme #works .pdf-main-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  grid-auto-rows: auto !important;
+  max-width: min(820px, 100%) !important;
+  margin: 0.75rem auto clamp(2rem, 4vw, 3rem) !important;
+  padding: 0 !important;
+  gap: clamp(0.55rem, 1vw, 0.85rem) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(n) {
+  display: none !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(-n+6),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  aspect-ratio: auto !important;
+  grid-row: auto !important;
+  order: initial !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(-n+6) {
+  grid-column: span 1 / span 1 !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+  grid-column: 1 / -1 !important;
+  aspect-ratio: 1464 / 600 !important;
+  height: auto !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(-n+6) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11) img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+@media (max-width: 780px) {
+  .product-portfolio-theme #works > div > .pdf-main-grid.grid.grid-cols-2,
+  .product-portfolio-theme #works .pdf-main-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    max-width: 100% !important;
+  }
+
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(8),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(9),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(10),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(11),
+  .product-portfolio-theme #works .pdf-main-grid > .image-card:nth-child(12) {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+/* Detail page board: use the reference folder only as layout direction. */
+.product-portfolio-theme #works .detail-head-gallery {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: clamp(1rem, 1.65vw, 1.35rem) !important;
+  max-width: min(980px, 100%) !important;
+  margin: clamp(1.75rem, 3vw, 2.55rem) auto clamp(2.15rem, 4vw, 3.1rem) !important;
+  padding: clamp(0.95rem, 1.65vw, 1.35rem) !important;
+  border-radius: 0 !important;
+  background: #050505 !important;
+  background-color: #050505 !important;
+  background-image: none !important;
+  color: #fff !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::before {
+  content: "02. 主图类" !important;
+  grid-column: 1 / -1 !important;
+  display: block !important;
+  margin: 0 0 clamp(0.35rem, 1vw, 0.7rem) !important;
+  padding: 0.45rem 0 0.75rem !important;
+  border-top: 8px solid #ff2f2f !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
+  background: transparent !important;
+  color: #fff !important;
+  font-size: clamp(1.35rem, 2.65vw, 2.75rem) !important;
+  line-height: 0.95 !important;
+  text-shadow:
+    1.5px 0 0 rgba(255, 255, 255, 0.22),
+    3px 3px 0 rgba(0, 0, 0, 0.55) !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column {
+  display: flex !important;
+  min-width: 0 !important;
+  flex-direction: column !important;
+  gap: clamp(0.85rem, 1.35vw, 1.15rem) !important;
+  align-self: start !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card,
+.product-portfolio-theme #works .detail-head-gallery .image-card:nth-child(n) {
+  display: block !important;
+  grid-column: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 3 / 4 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 14px !important;
+  background: #111 !important;
+  background-color: #111 !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  padding: 0 !important;
+  background: #111 !important;
+}
+
+@media (max-width: 900px) {
+  .product-portfolio-theme #works .detail-head-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    max-width: min(720px, 100%) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .product-portfolio-theme #works .detail-head-gallery {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Remove the outer constraint panel from the detail gallery. */
+.product-portfolio-theme #works .detail-head-gallery {
+  max-width: min(980px, 100%) !important;
+  padding: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #050505 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::before {
+  color: #050505 !important;
+  border-top-color: #111 !important;
+  border-bottom-color: rgba(5, 5, 5, 0.16) !important;
+  text-shadow:
+    1.5px 0 0 #d9d9d9,
+    3px 3px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Traffic image replacement: keep each source image ratio. */
+.product-portfolio-theme #works .detail-head-gallery {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  align-items: start !important;
+  gap: clamp(0.85rem, 1.35vw, 1.15rem) !important;
+  max-width: min(980px, 100%) !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card,
+.product-portfolio-theme #works .detail-head-gallery .image-card:nth-child(n) {
+  height: auto !important;
+  aspect-ratio: auto !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  overflow: hidden !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  background: transparent !important;
+}
+
+@media (max-width: 900px) {
+  .product-portfolio-theme #works .detail-head-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Exact traffic-card ratios: remove leftover tall-card whitespace. */
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="0"] { aspect-ratio: 750 / 1000 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="1"] { aspect-ratio: 750 / 1125 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="2"] { aspect-ratio: 1 / 1 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="3"] { aspect-ratio: 750 / 1200 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="4"] { aspect-ratio: 1 / 1 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="5"] { aspect-ratio: 1 / 1 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="6"] { aspect-ratio: 750 / 1000 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="7"] { aspect-ratio: 1 / 1 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="8"] { aspect-ratio: 1 / 1 !important; }
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="9"] { aspect-ratio: 750 / 1000 !important; }
+
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order] {
+  align-self: start !important;
+  height: auto !important;
+  min-height: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order] img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* User-marked square-content traffic cards: crop the leftover vertical canvas. */
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(2),
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(3),
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(5),
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(2) > .image-card:nth-of-type(3),
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(2) > .image-card:nth-of-type(4) {
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(2) img,
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(3) img,
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(5) img,
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(2) > .image-card:nth-of-type(3) img,
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(2) > .image-card:nth-of-type(4) img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  display: block !important;
+}
+
+/* Direct data-order fallback for the same cropped traffic cards. */
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="2"],
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="4"],
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="5"],
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="7"],
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="8"] {
+  aspect-ratio: 1 / 1 !important;
+  overflow: hidden !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="2"] img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="4"] img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="5"] img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="7"] img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="8"] img {
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+
+/* Final works image rounding. */
+.product-portfolio-theme #works .image-card,
+.product-portfolio-theme #works .image-card:nth-child(n),
+.product-portfolio-theme #works .pdf-main-grid > .image-card,
+.product-portfolio-theme #works .detail-head-gallery .image-card,
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card,
+.product-portfolio-theme #works .packaging-gallery__card {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+.product-portfolio-theme #works .image-card img,
+.product-portfolio-theme #works .pdf-main-grid > .image-card img,
+.product-portfolio-theme #works .detail-head-gallery .image-card img,
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card img,
+.product-portfolio-theme #works .packaging-gallery__card img {
+  border-radius: inherit !important;
+}
+
+/* Main-visual limit boxes: force rounded clipping on the actual frame. */
+.product-portfolio-theme #works .pdf-main-grid > figure.image-card {
+  border-radius: 18px !important;
+  clip-path: inset(0 round 18px) !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+}
+
+.product-portfolio-theme #works .pdf-main-grid > figure.image-card > img {
+  border-radius: 18px !important;
+  clip-path: inset(0 round 18px) !important;
+}
+
+/* Detail/main-board frames: keep the marked limit boxes square. */
+.product-portfolio-theme #works .detail-head-gallery .image-card,
+.product-portfolio-theme #works .detail-head-gallery .image-card:nth-child(n),
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order] {
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order] img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  border-radius: inherit !important;
+}
+
+/* Selected portrait cards: restore their original frames only. */
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="0"] {
+  aspect-ratio: 750 / 1000 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="1"] {
+  aspect-ratio: 750 / 1125 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="3"] {
+  aspect-ratio: 750 / 1200 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="4"] {
+  aspect-ratio: 750 / 1000 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(2) {
+  aspect-ratio: 750 / 1000 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(1) {
+  aspect-ratio: 750 / 1000 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="6"] {
+  aspect-ratio: 750 / 1000 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="0"] img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="1"] img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="3"] img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="4"] img,
+.product-portfolio-theme #works .detail-head-gallery .image-card[data-order="6"] img {
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(2) img {
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery .works-compact-gallery__column:nth-of-type(1) > .image-card:nth-of-type(1) img {
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Mobile readability fixes. */
+@media (max-width: 760px) {
+  .product-portfolio-theme .hero-image-reel {
+    right: clamp(0.35rem, 2vw, 0.75rem) !important;
+    left: auto !important;
+    top: 12.5rem !important;
+    bottom: 8.6rem !important;
+    width: min(26vw, 120px) !important;
+    transform: rotate(2deg) !important;
+    opacity: 0.52 !important;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 10%, #000 86%, transparent 100%) !important;
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 10%, #000 86%, transparent 100%) !important;
+  }
+
+  .product-portfolio-theme .hero-image-reel__tile {
+    border-width: 4px !important;
+    border-radius: 14px !important;
+  }
+
+  .product-portfolio-theme #about span.rounded-full.border {
+    background: transparent !important;
+    border-color: #050505 !important;
+    color: #050505 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Selected packaging/print group only. */
+.product-portfolio-theme #works .detail-packaging-row {
+  position: relative !important;
+  margin-top: clamp(3rem, 5vw, 4.25rem) !important;
+  padding-top: clamp(4.2rem, 6vw, 5.4rem) !important;
+}
+
+.product-portfolio-theme #works .detail-packaging-row::before {
+  content: "03. 印刷类" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  min-height: clamp(2.4rem, 4vw, 3.4rem) !important;
+  padding: 0.5rem 0 0.45rem !important;
+  border-top: 8px solid #111 !important;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.16) !important;
+  background: #fff !important;
+  color: #050505 !important;
+  font-size: clamp(1.65rem, 3vw, 3.2rem) !important;
+  font-weight: 900 !important;
+  line-height: 0.95 !important;
+  letter-spacing: 0 !important;
+  text-shadow: 1.5px 0 0 #d9d9d9, 3px 3px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-portfolio-theme #works .detail-packaging-row::after {
+  content: "PRINT DESIGN / PACKAGING" !important;
+  position: absolute !important;
+  top: clamp(0.85rem, 1.6vw, 1.25rem) !important;
+  right: 0 !important;
+  color: #050505 !important;
+  font-size: clamp(0.78rem, 1.2vw, 1.05rem) !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.04em !important;
+}
+
+@media (max-width: 760px) {
+  .product-portfolio-theme #works .detail-packaging-row {
+    padding-top: 4.25rem !important;
+  }
+
+  .product-portfolio-theme #works .detail-packaging-row::after {
+    display: none !important;
+  }
+}
+
+/* Selected contact badge: make the small DESIGN frame visible on white. */
+.product-portfolio-theme .contact-poster__badge {
+  border: 2px solid rgba(18, 56, 255, 0.72) !important;
+  border-radius: 999px !important;
+  background: rgba(18, 56, 255, 0.08) !important;
+  color: #1028ff !important;
+  padding: 0.32em 0.86em 0.28em !important;
+  opacity: 1 !important;
+}
+
+/* Match the second and third works headers to the first title bar. */
+.product-portfolio-theme #works .detail-head-gallery,
+.product-portfolio-theme #works .detail-packaging-row {
+  position: relative !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery {
+  padding-top: clamp(4rem, 5.4vw, 5.25rem) !important;
+}
+
+.product-portfolio-theme #works .detail-packaging-row {
+  padding-top: clamp(4rem, 5.4vw, 5.25rem) !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::before,
+.product-portfolio-theme #works .detail-packaging-row::before {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: clamp(3rem, 4vw, 3.7rem) !important;
+  margin: 0 !important;
+  padding: 0.55rem 0.85rem 0.5rem !important;
+  border-top: 8px solid #111 !important;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.18) !important;
+  background: #dcecff !important;
+  color: #0b1f38 !important;
+  font-family: Impact, Haettenschweiler, "Arial Black", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif !important;
+  font-size: clamp(1.45rem, 2.75vw, 2.95rem) !important;
+  font-style: italic !important;
+  font-weight: 900 !important;
+  line-height: 0.95 !important;
+  letter-spacing: 0 !important;
+  text-transform: uppercase !important;
+  transform: none !important;
+  text-shadow:
+    1.5px 0 0 #eef5ff,
+    3px 3px 0 rgba(0, 0, 0, 0.14) !important;
+  white-space: nowrap !important;
+  z-index: 2 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::before {
+  content: "02. \4E3B\56FE\7C7B" !important;
+}
+
+.product-portfolio-theme #works .detail-packaging-row::before {
+  content: "03. \5370\5237\7C7B" !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::after,
+.product-portfolio-theme #works .detail-packaging-row::after {
+  position: absolute !important;
+  top: clamp(1.15rem, 1.8vw, 1.45rem) !important;
+  right: 0.85rem !important;
+  display: block !important;
+  color: #0b1f38 !important;
+  font-family: Impact, Haettenschweiler, "Arial Black", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif !important;
+  font-size: clamp(0.72rem, 1vw, 1rem) !important;
+  font-style: italic !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  text-transform: uppercase !important;
+  text-shadow: 1.5px 1.5px 0 rgba(0, 0, 0, 0.08) !important;
+  z-index: 3 !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::after {
+  content: "MAIN VISUAL / PRODUCT POSTER" !important;
+}
+
+.product-portfolio-theme #works .detail-packaging-row::after {
+  content: "PRINT DESIGN / PACKAGING" !important;
+}
+
+@media (max-width: 760px) {
+  .product-portfolio-theme #works .detail-head-gallery::after,
+  .product-portfolio-theme #works .detail-packaging-row::after {
+    display: none !important;
+  }
+}
+
+/* Selected contact badge: stronger contrast on the white contact page. */
+.product-portfolio-theme .contact-poster__badge {
+  background: #1238ff !important;
+  border-color: #1238ff !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  position: relative !important;
+}
+
+.product-portfolio-theme .contact-poster__badge::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 1.05rem !important;
+  bottom: -0.42rem !important;
+  width: 0 !important;
+  height: 0 !important;
+  border-top: 0.55rem solid #1238ff !important;
+  border-right: 0.55rem solid transparent !important;
+  pointer-events: none !important;
+}
+
+/* Selected print header: no blue fill and align subtitle to the title bottom. */
+.product-portfolio-theme #works .detail-packaging-row::before {
+  align-items: flex-end !important;
+  background: transparent !important;
+  padding-bottom: 0.42rem !important;
+}
+
+.product-portfolio-theme #works .detail-packaging-row::after {
+  top: auto !important;
+  bottom: 0.58rem !important;
+}
+
+/* Selected main-image header: white background and bottom-aligned text. */
+.product-portfolio-theme #works .detail-head-gallery::before {
+  align-items: flex-end !important;
+  background: #ffffff !important;
+  padding-bottom: 0.42rem !important;
+}
+
+.product-portfolio-theme #works .detail-head-gallery::after {
+  top: auto !important;
+  bottom: 0.58rem !important;
+}
+
+/* Selected 3D header: remove the small decorative dot. */
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(6) h2::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Selected print header: remove the right-side English label. */
+.product-portfolio-theme #works .detail-packaging-row::after {
+  display: none !important;
+  content: none !important;
+}
+/* 04 detail page category: two-column vertical poster grid matching the page language. */
+.product-portfolio-theme #works .detail-page-section {
+  max-width: min(1280px, calc(100vw - 48px)) !important;
+  margin: clamp(3rem, 5vw, 4.5rem) auto 0 !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+  color: #07172e !important;
+}
+
+.product-portfolio-theme #works .detail-page-section__title {
+  position: relative !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+  margin: 0 0 0.95rem !important;
+  box-sizing: border-box !important;
+  padding: 0.45rem 0.45rem 0.55rem !important;
+  border-top: 6px solid #07172e !important;
+  border-bottom: 1px solid rgba(7, 23, 46, 0.12) !important;
+  background: #ffffff !important;
+  color: #07172e !important;
+}
+
+.product-portfolio-theme #works .detail-page-section__title::before,
+.product-portfolio-theme #works .detail-page-section__title h2::after {
+  display: none !important;
+  content: none !important;
+}
+
+.product-portfolio-theme #works .detail-page-section__title h2,
+.product-portfolio-theme #works .detail-page-section__title p {
+  color: #07172e !important;
+  font-family: Impact, Haettenschweiler, "Arial Black", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif !important;
+  font-style: italic !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  text-shadow: 0.08em 0.08em 0 rgba(33, 91, 188, 0.14) !important;
+  transform: none !important;
+}
+
+.product-portfolio-theme #works .detail-page-section__title h2 {
+  font-size: clamp(1.75rem, 4vw, 2.55rem) !important;
+  line-height: 0.95 !important;
+  min-width: 0 !important;
+}
+
+.product-portfolio-theme #works .detail-page-section__title p {
+  max-width: 42% !important;
+  font-size: clamp(0.62rem, 0.95vw, 0.82rem) !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  text-align: right !important;
+}
+
+.product-portfolio-theme #works .detail-page-showcase {
+  column-count: auto !important;
+  column-gap: normal !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  align-items: start !important;
+  gap: 22px !important;
+  padding: 0 2px 2px !important;
+  background: #ffffff !important;
+}
+
+.product-portfolio-theme #works .detail-page-showcase .image-card {
+  break-inside: auto !important;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border: 1px solid rgba(7, 23, 46, 0.12) !important;
+  border-radius: 10px !important;
+  background: #f7faff !important;
+  box-shadow: 0 12px 30px rgba(7, 23, 46, 0.08) !important;
+  overflow: hidden !important;
+  aspect-ratio: auto !important;
+}
+
+.product-portfolio-theme #works .detail-page-showcase .image-card img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: inherit !important;
+}
+
+@media (max-width: 900px) {
+  .product-portfolio-theme #works .detail-page-showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-portfolio-theme #works .detail-page-showcase {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Current order fix: 04 detail images use the new folder; keep the following 3D title readable. */
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) {
+  overflow: visible !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2 span,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) p {
+  color: #050505 !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2 {
+  display: inline-flex !important;
+  align-items: baseline !important;
+  gap: 0.14em !important;
+  font-size: clamp(1.75rem, 3.25vw, 3.45rem) !important;
+  min-width: max-content !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2 span {
+  font-size: inherit !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) p {
+  font-size: clamp(0.9rem, 1.25vw, 1.25rem) !important;
+}
+
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2::before,
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2::after {
+  display: none !important;
+  content: none !important;
+}
+
+@media (min-width: 641px) and (max-width: 980px) {
+  .product-portfolio-theme #works .detail-page-showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* 3D rendering: paired render/clay image layout from the new folder. */
+.product-portfolio-theme #works .works-masonry-gallery--3d {
+  column-count: auto !important;
+  column-gap: normal !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  max-width: min(1080px, calc(100vw - 48px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: #fff !important;
+}
+
+.product-portfolio-theme #works .works-masonry-gallery--3d::before,
+.product-portfolio-theme #works .works-masonry-gallery--3d::after {
+  display: none !important;
+  content: none !important;
+}
+
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card,
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card:nth-child(n) {
+  display: block !important;
+  grid-column: auto !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-radius: 10px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+  aspect-ratio: auto !important;
+}
+
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card img,
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card:nth-child(n) img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: inherit !important;
+}
+
+@media (max-width: 640px) {
+  .product-portfolio-theme #works .works-masonry-gallery--3d {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Final requested 3D gallery layout: 4 images per row on desktop. */
+.product-portfolio-theme #works .works-masonry-gallery--3d{column-count:auto!important;column-gap:normal!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:22px!important;max-width:min(1080px,calc(100vw - 48px))!important;margin-left:auto!important;margin-right:auto!important;background:#fff!important}
+@media (min-width:641px) and (max-width:980px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:640px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:1fr!important}}
+
+/* Detail page connection images: requested as one row of five. */
+.product-portfolio-theme #works .detail-page-connect-showcase{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:18px!important;max-width:min(1080px,calc(100vw - 48px))!important;margin:18px auto 0!important;padding:0 2px 2px!important;background:#fff!important;align-items:start!important}
+.product-portfolio-theme #works .detail-page-connect-showcase:before,.product-portfolio-theme #works .detail-page-connect-showcase:after{display:none!important;content:none!important}
+.product-portfolio-theme #works .detail-page-connect-showcase .image-card,.product-portfolio-theme #works .detail-page-connect-showcase .image-card:nth-child(n){display:block!important;width:100%!important;margin:0!important;overflow:hidden!important;border-radius:10px!important;background:#fff!important;box-shadow:none!important;aspect-ratio:auto!important}
+.product-portfolio-theme #works .detail-page-connect-showcase .image-card img,.product-portfolio-theme #works .detail-page-connect-showcase .image-card:nth-child(n) img{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;border-radius:inherit!important}
+@media (min-width:641px) and (max-width:980px){.product-portfolio-theme #works .detail-page-connect-showcase{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media (max-width:640px){.product-portfolio-theme #works .detail-page-connect-showcase{grid-template-columns:1fr!important;max-width:calc(100vw - 32px)!important;gap:14px!important}}
+
+/* Final title visibility fix for the current 3D rendering section. */
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2{color:#050505!important;display:inline-flex!important;width:auto!important;min-width:max-content!important;max-width:none!important;overflow:visible!important;font-size:clamp(1.95rem,3.6vw,3.6rem)!important;line-height:.9!important;white-space:nowrap!important}
+.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2 *,.product-portfolio-theme #works > div > [data-section-title]:nth-of-type(7) h2 span{color:#050505!important;font-size:inherit!important;line-height:inherit!important}
+
+/* Final 3D card whitespace fix: keep cards at their image height instead of grid row stretching. */
+.product-portfolio-theme #works .works-masonry-gallery--3d{align-items:start!important}
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card,.product-portfolio-theme #works .works-masonry-gallery--3d .image-card:nth-child(n){align-self:start!important;height:auto!important}
+
+/* Final 3D masonry gap fix: prevent grid row gaps under shorter images. */
+.product-portfolio-theme #works .works-masonry-gallery--3d{display:block!important;column-count:4!important;column-gap:22px!important;max-width:min(1080px,calc(100vw - 48px))!important;margin-left:auto!important;margin-right:auto!important}
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card,.product-portfolio-theme #works .works-masonry-gallery--3d .image-card:nth-child(n){display:block!important;break-inside:avoid!important;page-break-inside:avoid!important;margin:0 0 22px!important;width:100%!important}
+@media (min-width:641px) and (max-width:980px){.product-portfolio-theme #works .works-masonry-gallery--3d{column-count:2!important}}
+@media (max-width:640px){.product-portfolio-theme #works .works-masonry-gallery--3d{column-count:1!important}}
+
+/* Final 3D layout: restore the previous clean 4-column grid and only tighten spacing. */
+.product-portfolio-theme #works .works-masonry-gallery--3d{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;align-items:start!important;column-count:auto!important;column-gap:16px!important;row-gap:16px!important;gap:16px!important;max-width:min(1080px,calc(100vw - 48px))!important;margin-left:auto!important;margin-right:auto!important}
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card,.product-portfolio-theme #works .works-masonry-gallery--3d .image-card:nth-child(n){display:block!important;break-inside:auto!important;margin:0!important;width:100%!important;height:auto!important}
+@media (min-width:641px) and (max-width:980px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:640px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:1fr!important}}
+
+/* Final locked 3D layout: 4 per row, render/clay order, tighter vertical gap. */
+.product-portfolio-theme #works .works-masonry-gallery--3d{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;column-gap:16px!important;row-gap:8px!important;gap:8px 16px!important;align-items:start!important}
+.product-portfolio-theme #works .works-masonry-gallery--3d .image-card,.product-portfolio-theme #works .works-masonry-gallery--3d .image-card:nth-child(n){margin:0!important}
+@media (min-width:641px) and (max-width:980px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:640px){.product-portfolio-theme #works .works-masonry-gallery--3d{grid-template-columns:1fr!important}}
